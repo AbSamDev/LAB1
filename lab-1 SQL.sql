@@ -13,7 +13,10 @@ insert into student values('1', 'zahid ali', 'uet lahore', 23)
 insert into student values('2', 'Ahmad bilal', 'uet lahore', 122)
 insert into student values('3', 'abdul Samad', 'uet lahore', 13)
 insert into student values('4', 'Abdullah safdar', 'uet lahore', 2)
-insert into student values('5', 'Rafaay', 'uet lahore', 141)
+insert into student values('5', 'Rafaay', 'uet lahore', 141),
+insert into student values('6', 'Ahsan Farid', 'uet lahore', 9)
+insert into student values('7', 'Legend Ahsan', 'uet lahore', 12)
+
 
 select * from student
 
@@ -23,7 +26,7 @@ select * from student where student_name = 'Ahmad bilal'
 update student set student_name='Zahdi Ali' where (cnic='1')
 update student set student_name='Abdul Samad', age='19' where (cnic='3')
 update student set student_address = 'ZAhid ali2' where cnic = '1'
-
+select * from student
 delete from student where cnic = '3'  // syntax of delete query
 
 create table subject_result(
@@ -37,6 +40,7 @@ insert into subject_result (course_code, course_title, student_grade, marks) val
 insert into subject_result (course_code, course_title, student_grade, marks) values('CS311', 'AOA', 'A-', 85)
 insert into subject_result (course_code, course_title, student_grade, marks) values('CS308', 'OS', 'B+', 70)
 insert into subject_result (course_code, course_title, student_grade, marks) values('CS201', 'COAL', 'B', 61)
+insert into subject_result (course_code, course_title, student_grade, marks) values('CS201', 'OS', 'A+', 61)
 insert into subject_result (course_code, course_title, student_grade, marks) values('CS113', 'DLD', 'A', 86)
 
 truncate table subject_result  // syntax of truncate
